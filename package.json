@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "normalize.css": "^6.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "skeleton-css": "^2.0.4"

@@ -1,16 +1,15 @@
 .hero {
   background-image:url('../assets/images/bghero.jpg');
-  //background-color:lime;
-  //background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  //border: 1px solid red;
   margin: 0;
   width: 100%;
   max-width: 100%;
   height: 100%;
 
+  /* overlay */
   &:before {
     content: '';
     position: absolute;
@@ -25,70 +24,100 @@
 }
 
 .topbar {
-  padding:0 50px;
+  width: 93.75%;
+  //padding:0 50px;
+  //border: 1px solid red;
+  margin: 0 auto 10px;
 
   a {
+    //color:#ffffff;
+    //font-size:1.2em;
     position: relative;
-    z-index: 3;
+    z-index: 2;
+    //margin: 0 0.2em;
   }
 
-  a:hover {
-    text-decoration: none;
-    color:#ffffff;
+  //a:hover {
+    //text-decoration: none;
+    //color:#ffffff;
+  //}
+  
+
+  .topbar-left {
+    font-size: 1.5em;
+    float:left;
+    width: 30%;
+    //border: 1px solid blue;
   }
 }
 
-.topbar-left {
-  font-size: 1.5em;
-}
 
 .brand-link {
   color: #ffffff;
   font-size: 2em;
+  z-index:3;
 }
 
 .topbar-right {
   text-align: right;
+  //border: 1px solid black;
+  width: 67%;
+  float:right;
   padding:15px 0;
 
   .main-nav > ul > li {
     padding: 0 15px;
   }
 
-  .main-nav > ul > li > a {
-    color: #ffffff;
-    font-size: 1.3em;
-    padding:0;
-    font-weight: 600;
+  .main-nav {
+    & > ul {
+      & > li {
+        & > a {
+          color: #ffffff;
+          font-size: 1.3em;
+          padding:0;
+          font-weight: 600;
+          position: relative;
+          //z-index:3;
+
+          &::before {
+            content: "";
+            position:absolute;
+            background-color: #fff;
+            height:2px;
+            width:100%;
+            left:0;
+            bottom:0;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out 0s;
+          }
+
+          &:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
   }
 }
 
 .hero-header {
-  //padding: 250px 0;
+  //padding: 150px 0;
   //min-height: 4.5em;
+ // border: 1px solid yellow;
   text-align: center;
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  z-index: 2;
+  z-index: 3;
+  width: 100%;
 
   p {
     font-size: 1.8em;
   }
-}
-
-
-.btn-white {
-  border: 2px #ffffff solid;
-  color:#ffffff;
-  font-weight: 600;
-  background: transparent;
-}
-
-a.btn-white:hover {
-  color:#ffffff;
-  border: 2px #ffffff solid;
 }
 

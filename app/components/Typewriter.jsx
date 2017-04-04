@@ -66,6 +66,6 @@ export default class Typewriter extends React.Component {
 
 
   render() {
-    return <span>{this.state.text}|</span>
+    return <span>{this.state.text}<span className="blink-text">|</span></span>
   }
 }

@@ -47,6 +47,7 @@ const common = {
       },*/
       {
         test: /\.s?css$/,
+        //test: /\.scss$/,
         include: PATHS.app,
         use: extractSass.extract({
           use: [{

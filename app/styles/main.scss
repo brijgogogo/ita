@@ -1,6 +1,7 @@
-@import "~skeleton-css/css/normalize";
-@import "~skeleton-css/css/skeleton";
-@import '~font-awesome/css/font-awesome.css';
+@import '~normalize.css/normalize.css';
+//@import "~skeleton-css/css/normalize";
+//@import "~skeleton-css/css/skeleton";
+//@import '~font-awesome/css/font-awesome.css';
 @import './hero.scss';
 
 html, body {
@@ -10,11 +11,21 @@ html, body {
 
 body {
   background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+  font: normal 100% calibri, serif, georgia;
   //font-size: 1em;
   //line-height: 1.1em;
   //overflow-x: hidden;
   //overflow-y: scroll;
 }
+
+//target / context = result
+h1 {
+  font-size: 1.5em; /* 24px / 16px */
+  font-weight: normal;
+}
+
 
 a {
   text-decoration: none;
@@ -24,11 +35,16 @@ p {
   font-weight: 400;
 }
 
+.no-text-transform {
+  text-transform: none;
+}
+
 #app {
   width: 100%;
-  height: 100%; } 
+  height: 100%; 
+} 
   
-.main-wrapper {
+.page {
   height: 100%;
   width: 100%;
   //border: 1px solid blue;
@@ -50,3 +66,54 @@ p {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.blink-text {
+  animation: blinktext .8s infinite;
+}
+
+.clear:after {
+  content: '';
+  clear:both;
+  display:table;
+}
+
+@keyframes blinktext {
+  0% {
+    opacity:0.8
+  }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity:0.8 
+  }
+}
+
+.tagline {
+  font-size: 1.3em !important;
+  margin: 2em 0;
+}
+
+.btn {
+  padding: 0.7em 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.btn-white {
+  border: 2px #ffffff solid;
+  color:#ffffff;
+  font-weight: 600;
+  font-size:1.2em;
+  //padding-top:15px;
+  //padding-bottom: 15px;
+  //line-height: 1.4em;
+  //height:auto;
+}
+
+a.btn-white:hover {
+  color:#ffffff;
+  border: 2px #ffffff solid;
+}
+
