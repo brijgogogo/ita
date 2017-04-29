@@ -1,0 +1,109 @@
+#footer {
+  //border: 1px solid red;
+
+  & > div {
+    display: block;
+  }
+
+  #footer-copyright {
+    border: 1px solid green;
+
+    .footer-left {
+      float:left;
+      width: 45%;
+      //border: 1px solid blue;
+
+      p {
+        color: #aaaaaa;
+      }
+    }
+
+
+    .footer-right {
+      float: right;
+      text-align: right;
+      width:45%;
+      //border: 1px solid blue;
+
+      a {
+        color:#232323;
+        margin: 0 5px;
+
+        &:hover, &:focus {
+          color: #1a93d9;
+        }
+      }
+    }
+  }
+
+  #footer-menu {
+    //border: 1px solid blue;
+    background-color: #2e3234;
+    padding: 30px 0;
+
+    & > div {
+      //border: 1px solid white;
+
+      & > div {
+        width: 25%;
+        //border:1px solid red;
+        float:left;
+
+        h4 {
+          margin: 0 0 40px 0;
+          color:#ffffff;
+          font-weight: 600;
+          font-size: 1.2em;
+
+          span {
+            border-bottom: 1px dashed #ffffff;
+            padding-bottom: 5px;
+          }
+        }
+
+        li {
+          color: #ffffff;
+          padding: 0 0 15px 0;
+
+        }
+
+        a {
+          color: #ffffff;
+          opacity: 0.75;
+          display: inline-block;
+          transition: opacity 0.25s linear;
+
+          &:hover, &:focus {
+            opacity: 1;
+          }
+        }
+
+        input[type=text] {
+          background-color: transparent;
+          border-color: #ffffff;
+          color:#ffffff;
+          border-width: 2px;
+          width:100%;
+          padding: 5px 12px;
+          line-height: 1.5em;
+          font-size: 1em;
+          height: 2em;
+        }
+
+        button {
+          font-size: 1em;
+          font-weight: 400;
+          border-width: 1px;
+          margin-top: 10px;
+          padding:  10px 10px;
+          cursor: pointer;
+
+          &:hover, &:focus {
+            background-color: #ffffff;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,16 @@
 @import '~normalize.css/normalize.css';
 //@import "~skeleton-css/css/normalize";
 //@import "~skeleton-css/css/skeleton";
-//@import '~font-awesome/css/font-awesome.css';
+@import '~font-awesome/css/font-awesome.css';
+@import './fonts.scss';
+@import './buttons.scss';
+@import './grid.scss';
+@import './backgroundColors.scss';
 @import './hero.scss';
+@import  './services.scss';
+@import './service-a.scss';
+@import './footer.scss';
+@import './technologies.scss';
 
 html, body {
   height: 100%;
@@ -13,7 +21,10 @@ body {
   background-color: #f2f2f2;
   padding: 0;
   margin: 0;
-  font: normal 100% calibri, serif, georgia;
+  font-weight: normal;
+  font-size: 100%;
+  font-family:"Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  color: #333333;
   //font-size: 1em;
   //line-height: 1.1em;
   //overflow-x: hidden;
@@ -26,6 +37,16 @@ h1 {
   font-weight: normal;
 }
 
+div {
+  box-sizing: border-box;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -53,6 +74,7 @@ p {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
 .list-inline {
@@ -94,26 +116,4 @@ p {
   margin: 2em 0;
 }
 
-.btn {
-  padding: 0.7em 1.5em;
-  border: 1px solid black;
-  border-radius: 5px;
-  background: transparent;
-}
-
-.btn-white {
-  border: 2px #ffffff solid;
-  color:#ffffff;
-  font-weight: 600;
-  font-size:1.2em;
-  //padding-top:15px;
-  //padding-bottom: 15px;
-  //line-height: 1.4em;
-  //height:auto;
-}
-
-a.btn-white:hover {
-  color:#ffffff;
-  border: 2px #ffffff solid;
-}
 

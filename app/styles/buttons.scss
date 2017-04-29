@@ -1,0 +1,26 @@
+.btn {
+  padding: 0.7em 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: transparent;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.btn-white {
+  border: 2px #ffffff solid;
+  color:#ffffff;
+  font-weight: 600;
+  font-size:1.2em;
+  background-color: transparent;
+  //padding-top:15px;
+  //padding-bottom: 15px;
+  //line-height: 1.4em;
+  //height:auto;
+}
+
+a.btn-white:hover {
+  color:#ffffff;
+  border: 2px #ffffff solid;
+}
+

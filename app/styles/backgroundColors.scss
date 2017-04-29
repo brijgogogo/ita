@@ -1,0 +1,19 @@
+@mixin bgc($c) {
+  background-color: $c;
+}
+
+.bgc1 {
+   @include bgc(#a65ccd);
+}
+
+.bgc2 {
+  @include bgc(#F08F4B);
+}
+
+.bgc3 {
+  @include bgc(#2B54BB);
+}
+
+.bgc4 {
+  @include bgc(#FBD959);
+}

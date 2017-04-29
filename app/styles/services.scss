@@ -1,0 +1,39 @@
+#services {
+  height: 80%;
+  position: relative;
+
+  & > div {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    //border: 1px solid black;
+    
+
+    & > div {
+      float:left;
+      width: 31.3%;
+      text-align:center;
+      margin: auto 1%;
+      //border: 1px solid red;
+
+      & > i {
+        font-size: 5em;
+      }
+
+      & > h3 {
+        font-size:1.5em;
+        color:#232323;
+        font-weight: 600;
+      }
+
+      & > p {
+        font-size:0.9em;
+        line-height: 2em;
+        font-weight: 400;
+      }
+    }
+
+  }
+}
